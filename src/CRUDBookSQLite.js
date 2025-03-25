@@ -1,6 +1,9 @@
 // SQLite3 CRUD operations
 // npm install sqlite3
-// Create a Bood.sqlite file in Database folder // Run this file with node CRUDBookSQLite.js // Test with Postman
+// Create a Book.sqlite file in Database folder 
+// Run this file with node CRUDBookSQLite.js 
+// Test with Postman
+require("dotenv").config();
 
 const express = require('express');
 const sqlite3 = require('sqlite3');
