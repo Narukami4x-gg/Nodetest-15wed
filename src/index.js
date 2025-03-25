@@ -1,12 +1,4 @@
-require("dotenv").config();
-
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello Wolrd Narukami4x");
-});// SQLite3 CRUD operations
+// SQLite3 CRUD operations
 // npm install sqlite3
 // Create a Bood.sqlite file in Database folder 
 // Run this file with node CRUDBookSQLite.js 
@@ -95,7 +87,3 @@ app.delete('/books/:id',(req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`app listening at http://localhost:${port}`));
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
